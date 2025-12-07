@@ -84,6 +84,22 @@
         by <a href="https://handsondataviz.org" target="_blank">HandsOnDataViz</a>'
     }).addTo(map)
 
+    var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<center><h4>Super Map Title</h4>';
+	};
+
+	info.addTo(mymap);
+
+    L.control.scale().addTo(map);
+
   </script>
 
 </body>
