@@ -36,7 +36,7 @@
     var map = L.map('map', {
       zoomControl: false, // Add zoom control separately below
       center: [40.49, -106.83], // Initial map center
-      zoom: 6, // Initial zoom level
+      zoom: 4, // Initial zoom level
       attributionControl: false, // Instead of default attribution, we add custom at the bottom of script
       scrollWheelZoom: false
     })
@@ -93,7 +93,7 @@
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<center><h4>Super Map Title</h4>';
+		this._div.innerHTML = '<center><h4>Garden In A Box</h4>';
 	};
 
 	info.addTo(mymap);
